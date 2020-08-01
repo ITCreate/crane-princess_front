@@ -12,6 +12,10 @@
       title="メリット"
       :items="items"
     />
+    <div class="link">
+      <p class="link-description">LINEでキャンプ道具の貸し出し予約ができます。以下のリンクから友達追加してください。</p>
+      <a href="https://lin.ee/qNkgXqv"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0"></a>
+    </div>
   </div>
 </template>
 
@@ -27,7 +31,7 @@ export default {
   },
   data() {
     return {
-      items: ["普段とは違った雰囲気を家で楽しめる", "高いキャンプ道具を買わなくてもいい","LINEからキャンプ道具の貸し出し予約できる"]
+      items: ["普段とは違った雰囲気を家で楽しめる", "高いキャンプ道具を買わなくてもいい", "LINEからキャンプ道具の貸し出し予約できる"]
     }
   }
 }
@@ -54,6 +58,16 @@ body {
   &-subtitle {
     margin: 0;
     font-size: 28px;
+  }
+}
+
+.link {
+  margin: 0 0 150px;
+  text-align: center;
+
+  &-description {
+    font-size: 24px;
+    margin: 0 0 20px;
   }
 }
 </style>
